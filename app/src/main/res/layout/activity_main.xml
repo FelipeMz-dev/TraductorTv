@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <EditText
+        android:id="@+id/editTextWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:hint="@string/hint_text_to_translate" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnTranslate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/lb_ic_play"
+            android:drawablePadding="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:onClick="onClickTranslate"
+            android:text="@string/translate" />
+
+        <Button
+            android:id="@+id/btnOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/lb_ic_loop"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            android:onClick="onClickOption"
+            android:text="@string/english_to_spanish" />
+
+        <Button
+            android:id="@+id/btnSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/lb_ic_search_mic"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            android:onClick="onClickSpeak"
+            android:text="@string/speak" />
+
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@android:drawable/ic_lock_silent_mode_off"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            android:onClick="onClickRead"
+            android:text="@string/read" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textViewTranslation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="@string/result"
+        android:textSize="26sp" />
+
+</LinearLayout>

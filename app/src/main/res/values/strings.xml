@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hint_text_to_translate">Text to translate</string>
+    <string name="translate">translate</string>
+    <string name="result">Result...</string>
+    <string name="english_to_spanish">English To Spanish</string>
+    <string name="spanish_to_english">Spanish To English</string>
+    <string name="speak">Speak</string>
+    <string name="translate_your_voice">Translate your voice</string>
+    <string name="read">Read</string>
+
+</resources>
